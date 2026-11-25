@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#060b23"><title>小小张，今日星光为你而来</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<canvas id="stage" aria-label="星空生日祝福动画"></canvas>
+<nav class="toolbar" aria-label="播放控制"><button id="music" class="icon" aria-pressed="false">音乐 · 关</button><button id="replay" class="icon">重播</button></nav>
+<div id="actions" class="actions hidden"></div><div class="hint" id="hint"></div><div id="progress" class="progress"></div>
+<div id="intro" class="overlay"><div class="cover"><div class="eyebrow">A LITTLE UNIVERSE · JUST FOR YOU</div><h1 id="coverTitle">小小张，<br>今日星光为你而来</h1><p>一份藏在星空里的生日惊喜。<br>轻触开启，让愿望被星星听见。</p><button id="start" class="primary">开启生日惊喜</button><p style="font-size:12px">开启后播放原创音乐，可随时关闭</p></div></div>
+<section id="letter" class="letter hidden" role="dialog" aria-modal="true" aria-label="完整生日祝福"><button id="closeLetter" class="icon close">关闭</button><div id="letterContent"></div></section>
+<audio id="audio" loop preload="auto"></audio>
+<script src="birthday-config.js"></script><script src="assets/three.min.js"></script><script src="app.js"></script>
+</body></html>
